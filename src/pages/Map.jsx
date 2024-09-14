@@ -1,5 +1,5 @@
 import './Map.css';
-//import Navbar from 'src/components /Navbar.jsx';
+import Menu from '../components/Menu.jsx';
 
 export default function Map() {
   return (
@@ -8,6 +8,8 @@ export default function Map() {
         <div className="navbar-app">
         </div>
       </div>
+
+
 
       <section id="map">
         <iframe
@@ -22,6 +24,8 @@ export default function Map() {
           src="https://app.mappedin.com/map/66ce20fdf42a3e000b1b0545?embedded=true"
         ></iframe>
       </section>
+
+      <Menu></Menu>
     </>
   );
 }

@@ -8,6 +8,21 @@
     padding: 15px;
     padding-top: 20px;
     padding-bottom: 80px;
-  
+}
 
+.menu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.waterlog-icon{
+    height: 100px;
+}
+
+.map-icon{
+    height: 100px;
 }
