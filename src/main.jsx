@@ -10,7 +10,7 @@ createRoot(document.getElementById('root')).render(
 )
 
 
-import { getMapData, show3dMap } from "@mappedin/mappedin-js"
+/*import { getMapData, show3dMap } from "@mappedin/mappedin-js"
 import "@mappedin/mappedin-js/lib/index.css"
 
 // See Demo API key Terms and Conditions
@@ -29,4 +29,4 @@ async function init() {
   )
 }
 
-init()
+init()*/

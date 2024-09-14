@@ -1,5 +1,5 @@
-
-.navbar{
+.navbar {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -13,12 +13,14 @@
     height: 50px;
     margin-right: 65px;
 }
+
 .logo-icon {
     position: relative;
     height: 80px;
     margin-right: 5px;
 }
-.register-button{
+
+.register-button {
     position: relative;
     background-color: #6bb8cc;
     color: white;

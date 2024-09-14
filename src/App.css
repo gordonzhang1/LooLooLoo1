@@ -1,6 +1,13 @@
-body {
+*{
+    font-family: Helvetica, sans-serif;
+}
+.home-div {
     color: rgb(51, 51, 51);
-    width: 480px;
-    height: 100vh;
-    margin: auto;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  
+
 }

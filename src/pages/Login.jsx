@@ -1,4 +1,6 @@
+import './Login.css'
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import {
   MDBBtn,
@@ -12,26 +14,28 @@ import {
   MDBCheckbox,
 } from "mdb-react-ui-kit";
 
-function App() {
+function Login() {
   return (
     <MDBContainer fluid>
       <MDBRow className="d-flex justify-content-center align-items-center h-100">
         <MDBCol col="12">
           <MDBCard
             className="bg-white my-5 mx-auto"
-            style={{ borderRadius: "1rem", maxWidth: "500px" }}
+            style={{ borderRadius: "1rem", maxWidth: "500px", top: "10px" }}
           >
             <MDBCardBody className="p-5 w-100 d-flex flex-column">
-              <h2 className="fw-bold mb-2 text-center">Sign in</h2>
+            <NavLink to = "/"><button className = "return-button">⬅</button></NavLink>
+
+              <h2 className="fw-bold mb-2 text-left">Big Dreamers,<br></br>Small Bladders.</h2>
               <p className="text-white-50 mb-3">
                 Please enter your login and password!
               </p>
 
               <MDBInput
                 wrapperClass="mb-4 w-100"
-                label="Email address"
+                label="Cell phone number"
                 id="formControlLg"
-                type="email"
+                type="number"
                 size="lg"
               />
               <MDBInput
@@ -49,27 +53,10 @@ function App() {
                 label="Remember password"
               />
 
-              <MDBBtn size="lg">Login</MDBBtn>
+              <NavLink to = "/map"><button className = "login-button">LOGIN</button></NavLink>
 
               <hr className="my-4" />
-
-              <MDBBtn
-                className="mb-2 w-100"
-                size="lg"
-                style={{ backgroundColor: "#dd4b39" }}
-              >
-                <MDBIcon fab icon="google" className="mx-2" />
-                Sign in with google
-              </MDBBtn>
-
-              <MDBBtn
-                className="mb-4 w-100"
-                size="lg"
-                style={{ backgroundColor: "#3b5998" }}
-              >
-                <MDBIcon fab icon="facebook-f" className="mx-2" />
-                Sign in with facebook
-              </MDBBtn>
+              
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -78,4 +65,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
