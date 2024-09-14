@@ -1,3 +1,5 @@
+import "../App.css"
+
 export default function Register() {
-  return <button>Register</button>;
+  return <button className = "register-button">Register</button>;
 }

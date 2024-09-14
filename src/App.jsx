@@ -1,16 +1,13 @@
 import "./App.css";
 import Register from "./components /Register";
-import Logo from "./components /Logo";
+import Navbar from "./components /Navbar";
 
 function App() {
   return (
     <>
       <div className="homepage-container">
-        <div className="logo-app">
-          <Logo />
-        </div>
-        <div className="register-app">
-          <Register />
+        <div className="navbar-app">
+          <Navbar />
         </div>
       </div>
 
