@@ -1,31 +1,21 @@
-import "./App.css";
-import Register from "./components /Register";
-import Navbar from "./components /Navbar";
+import './App.css'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import Home  from './pages/Home.jsx'
+import Map from './pages/Map.jsx'
 
-function App() {
+export default function App() {
   return (
     <>
-      <div className="homepage-container">
-        <div className="navbar-app">
-          <Navbar />
-        </div>
-      </div>
-
-      <section id="map">
-        <iframe
-          href="https://www.mappedin.com/"
-          title="Mappedin Map"
-          name="Mappedin Map"
-          allow="clipboard-write; web-share"
-          width="100%"
-          height="650"
-          frameBorder="0"
-          // style="border:0"
-          src="https://app.mappedin.com/map/66ce20fdf42a3e000b1b0545?embedded=true"
-        ></iframe>
-      </section>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/map" element={<Map />} />
+        </Routes>
+      </Router>
     </>
-  );
+  )
 }
 
-export default App;
+
+
+

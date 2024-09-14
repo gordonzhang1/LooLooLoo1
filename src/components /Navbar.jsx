@@ -1,4 +1,4 @@
-import "../App.css"
+import '../App.css'
 import Register from './Register.jsx'
 
 export default function Navbar() {
