@@ -1,34 +1,28 @@
-body {
-    color: rgb(51, 51, 51);
-    width: 480px;
-    height: 100vh;
-    margin: auto;
+*{
+    font-family: Helvetica, sans-serif;
 }
-.navbar{
+.home-div {
+    color: rgb(51, 51, 51);
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.menu{
+    position: fixed;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: 10px;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
 }
 
-.logo-loo {
-    position: relative;
-    height: 50px;
-    margin-right: 65px;
+.waterlog-icon{
+    height: 100px;
 }
-.logo-icon {
-    position: relative;
-    height: 80px;
-    margin-right: 5px;
-}
-.register-button{
-    position: relative;
-    background-color: #6bb8cc;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
 
+.map-icon{
+    height: 100px;
 }
