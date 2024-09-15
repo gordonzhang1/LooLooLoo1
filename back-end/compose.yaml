@@ -1,0 +1,21 @@
+services:
+  back-end:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - mode: ingress
+        target: 4000
+    deploy:
+      resources:
+        reservations:
+          memory: 256M
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:4000/"]
+    domainname: www.loolooloo.co
+    environment:
+      - TWILIO_ACCOUNT_SID
+      - TWILIO_AUTH_TOKEN
+      - TO_NUMBER
+      - FROM_NUMBER
