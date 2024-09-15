@@ -26,18 +26,26 @@ const FindDirections = (startLatitude, startLongitude, endSpace) => {
   const start = mapView.createCoordinate(startLatitude, startLongitude);
 
   const directions = mapView.getDirections(start, endSpace);
-  
+
+  const [showDirections, setShowDirections] = useState(null);
+
+
+  const handleClick = (idx) => {
+    setShowDirections(mapView.getDirections(directions.instructions[idx].coordinate, endSpace));
+  } 
+
   return (
     <>
-      {directions.instructions.map(element => {
+      {directions.instructions.map((element, index) => {
         var ret = element.action.type;
         if (element.action.bearing != null){
           ret += " " + element.action.bearing;
         }
         ret += " in " + Math.ceil(element.distance) + " metre(s)";
-        return <Direction text={ret}/>
+        // console.log(ret);
+        return <div className="direction" key = {index}  onClick={() => {handleClick(index)}}>{ret}</div>
       })}
-      {directions ? <Navigation directions={directions} /> : null}
+      {directions ? <Navigation directions={showDirections == null ? directions : showDirections} /> : null}
     </>
   );
 }
@@ -73,12 +81,12 @@ const FindWashroom = ({startLatitude, startLongitude}) => {
 function Map() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-  console.log(queryParams);
+  // console.log(queryParams);
   const latitude = queryParams.get("latitude");
   const longitude = queryParams.get("longitude");
   const floorId = queryParams.get("floorId");
 
-  console.log(latitude, longitude, floorId)
+  // console.log(latitude, longitude, floorId)
   // const [searchParams] = useSearchParams();
   // const [latitude, setLatitude] = useState(searchParams.get("latitude"));
   // const [longitude, setLongitude] = useState(searchParams.get("longitude"));
@@ -119,11 +127,11 @@ function Map() {
           src="https://app.mappedin.com/map/66ce20fdf42a3e000b1b0545?embedded=true"
         ></iframe> */}
 
-        {//43.47322898671156 -80.53978074181718
+        {//43.47322898671156 -80.53978074181718 m_a93a33b76d3261c5
 }
 
         {mapData && latitude != null && longitude != null && floorId != null? (
-          <MapView mapData={mapData} style={{width: '100%'}} options={{initialFloor: "m_a93a33b76d3261c5"}}>
+          <MapView mapData={mapData} style={{width: '100%'}} options={{initialFloor: floorId}}>
             <FindWashroom startLatitude = {latitude} startLongitude = {-1*longitude} style={{width: '100%'}}/>
             {/* <CameraEvents/> */}
             <DrawPath/>
