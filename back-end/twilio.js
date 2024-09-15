@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = twilio(accountSid, authToken);
-const URL = "example.com";
+
 app.get("/", async (req, res) => {
   const message = await client.messages.create({
     body: "Hi Nathan",
