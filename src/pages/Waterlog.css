@@ -1,0 +1,46 @@
+
+.water-container{
+    height: 100%;
+    position: fixed;
+    width: 440px;
+}
+.button-container{
+    width: 440px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 130px;
+}
+.add, .subtract{
+    margin-left: 50px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 1rem;
+    color: #6bb8cc;
+    border-color: #6bb8cc;
+    border-style: solid;
+    width: 50px;
+}
+.watstar{
+    position: relative;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+}
+.watstar-count{
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    color: #e6c72f;
+    width: 20px;
+    
+}
+.moon{
+    position: relative;
+    width: 100px;
+    left: 380px;
+}

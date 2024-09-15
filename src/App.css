@@ -14,9 +14,9 @@
     position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     bottom: 0;
-    width: 100%;
+    width: 440px;
 }
 
 .waterlog-icon{
@@ -25,4 +25,14 @@
 
 .map-icon{
     height: 100px;
+}
+
+.water{
+    background-color: #6bb9cc75;
+    position: relative;
+    bottom: 40px;
+}
+.goose{
+    width: 150px;
+    position: relative;
 }
