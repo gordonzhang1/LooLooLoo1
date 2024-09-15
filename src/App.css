@@ -1,32 +1,42 @@
-*{
-    font-family: Helvetica, sans-serif;
-}
-.home-div {
+body {
     color: rgb(51, 51, 51);
-    border: none;
-    border-radius: 30px;
-    padding: 15px;
-    padding-top: 20px;
-    padding-bottom: 80px;
+    width: 480px;
+    height: 100vh;
+    margin: auto;
 }
-
-.menu{
-    position: fixed;
+.navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     bottom: 0;
     width: 440px;
 }
+.logo-icon {
+    position: relative;
+    height: 80px;
+    margin-right: 5px;
+}
+.register-button{
+    position: relative;
+    background-color: #6bb8cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
 
-.waterlog-icon{
-    height: 100px;
 }
 
-.map-icon{
-    height: 100px;
+#map{
+    height: 500px;
 }
 
+.direction{
+    padding: 5px;
+    height: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    margin: 10px;
+    display: flex;
+}
 .water{
     background-color: #6bb9cc75;
     position: relative;
