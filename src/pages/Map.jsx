@@ -24,10 +24,14 @@ const FindDirections = (startLatitude, startLongitude, endSpace) => {
 
   const [showDirections, setShowDirections] = useState(null);
 
+  const [clicked, setClicked] = useState(0);
 
   const handleClick = (idx) => {
+    setClicked(idx);
     setShowDirections(mapView.getDirections(directions.instructions[idx].coordinate, endSpace));
+    
   } 
+
 
 
   return (
@@ -39,7 +43,7 @@ const FindDirections = (startLatitude, startLongitude, endSpace) => {
         }
         ret += " in " + Math.ceil(element.distance) + " metre(s)";
         
-        return <div className="direction" key = {index}  onClick={() => {handleClick(index)}}>{ret}</div>
+        return <div className={clicked==index? "direction green": "direction"} key = {index}  onClick={() => {handleClick(index)}}>{ret}</div>
         
       })}
       {directions ? <Navigation directions={showDirections == null ? directions : showDirections} /> : null}

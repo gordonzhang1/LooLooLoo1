@@ -8,6 +8,10 @@
   margin-left: auto !important;
 }
 
+.green{
+    background-color: rgba(63, 90, 54, 0.4);
+}
+
 .navbar-app{
     width: 100%;
     margin: auto;
