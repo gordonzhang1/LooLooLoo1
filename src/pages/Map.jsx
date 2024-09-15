@@ -14,7 +14,7 @@ import DrawPath from "../components/DrawPath";
 import DrawNavigation from "../components/DrawNavigation";
 import CameraEvents from "../components/CameraEvents";
 import FloorSelector from "../components/FloorSelector";
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useLocation } from 'react-router-dom';
 import { Coordinate } from "@mappedin/mappedin-js";
 import Direction from "../components/Direction";
 
@@ -71,6 +71,14 @@ const FindWashroom = ({startLatitude, startLongitude}) => {
 
 
 function Map() {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  console.log(queryParams);
+  const latitude = queryParams.get("latitude");
+  const longitude = queryParams.get("longitude");
+  const floorId = queryParams.get("floorId");
+
+  console.log(latitude, longitude, floorId)
   // const [searchParams] = useSearchParams();
   // const [latitude, setLatitude] = useState(searchParams.get("latitude"));
   // const [longitude, setLongitude] = useState(searchParams.get("longitude"));
@@ -111,15 +119,18 @@ function Map() {
           src="https://app.mappedin.com/map/66ce20fdf42a3e000b1b0545?embedded=true"
         ></iframe> */}
 
-        {mapData ? (
+        {//43.47322898671156 -80.53978074181718
+}
+
+        {mapData && latitude != null && longitude != null && floorId != null? (
           <MapView mapData={mapData} style={{width: '100%'}} options={{initialFloor: "m_a93a33b76d3261c5"}}>
-            <FindWashroom startLatitude = {43.47322898671156} startLongitude = {-80.53978074181718} style={{width: '100%'}}/>
+            <FindWashroom startLatitude = {latitude} startLongitude = {-1*longitude} style={{width: '100%'}}/>
             {/* <CameraEvents/> */}
             <DrawPath/>
             {/* <DrawNavigation/> */}
             {/* <FloorSelector/> */}
             <Labels/>
-            <Markers/>
+            {/* <Markers/> */}
             {/* <Models/> */}
           </MapView>
         ) : null}

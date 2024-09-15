@@ -41,13 +41,13 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = twilio(accountSid, authToken);
 
-app.get("/", async (req, res) => {
+app.get("/", async (req, res) => ){
   const message = await client.messages.create({
     body: "Hi Nathan",
     from: "+13305296053",
     to: "+17785129210",
   });
-
+}
 //   console.log("SENT");
 
 //   res.send("SEND");
