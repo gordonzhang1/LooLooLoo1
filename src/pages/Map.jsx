@@ -7,19 +7,13 @@ import Mappedin, {
   useMap,
   Navigation,
 } from "@mappedin/react-sdk";
-import { show3dMap, getMapData } from "@mappedin/mappedin-js";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Labels from "../components/Labels";
-import Markers from "../components/Markers";
 import DrawPath from "../components/DrawPath";
-import DrawNavigation from "../components/DrawNavigation";
-import CameraEvents from "../components/CameraEvents";
-import FloorSelector from "../components/FloorSelector";
-import { useSearchParams, useLocation } from "react-router-dom";
-import { Coordinate } from "@mappedin/mappedin-js";
-import Direction from "../components/Direction";
+import {useLocation } from "react-router-dom";
+
 
 const FindDirections = (startLatitude, startLongitude, endSpace) => {
   const { mapData, mapView } = useMap();
@@ -85,7 +79,7 @@ const FindWashroom = ({ startLatitude, startLongitude }) => {
   return FindDirections(startLatitude, startLongitude, bestSpace);
 };
 
-function Map() {
+export default function Map() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   // console.log(queryParams);
@@ -114,27 +108,9 @@ function Map() {
 
   return (
     <>
-      <div className="homepage-container">
-        <div className="navbar-app">
-          <Navbar />
-        </div>
-      </div>
+      <Navbar />
 
       <section id="map">
-        {/* <iframe
-          href="https://www.mappedin.com/"
-          title="Mappedin Map"
-          name="Mappedin Map"
-          allow="clipboard-write; web-share"
-          width="100%"
-          height="650"
-          frameBorder="0"
-          // style="border:0"
-          src="https://app.mappedin.com/map/66ce20fdf42a3e000b1b0545?embedded=true"
-        ></iframe> */}
-
-        {//43.47322898671156 -80.53978074181718 m_a93a33b76d3261c5
-}
 
         {mapData && latitude != null && longitude != null && floorId != null? (
           <MapView mapData={mapData} style={{width: '100%'}} options={{initialFloor: floorId}}>
@@ -148,12 +124,8 @@ function Map() {
             {/* <Models/> */}
           </MapView>
         ) : null}
-          
       </section>
-
-      
     </>
   );
 }
 
-export default Map;

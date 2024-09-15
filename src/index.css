@@ -1,5 +1,16 @@
-#root{
-    margin: auto;
-    height: 100%;
-    width: 440px;
+@media screen and (min-width: 600px){
+    #root{
+        margin-left: 35vw;
+        height: 100%;
+        width: 30vw;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    #root{
+        margin: auto;
+        height: 100%;
+        width: 440px;
+    }
 }

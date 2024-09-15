@@ -1,3 +1,6 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
 body {
     color: rgb(51, 51, 51);
     width: 480px;
@@ -6,24 +9,17 @@ body {
 }
 .navbar{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-around;
     bottom: 0;
     width: 440px;
+    margin-left: 0 !important;
 }
+
 .logo-icon {
     position: relative;
     height: 80px;
     margin-right: 5px;
-}
-.register-button{
-    position: relative;
-    background-color: #6bb8cc;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-
 }
 
 #map{
@@ -32,11 +28,39 @@ body {
 
 .direction{
     padding: 5px;
-    height: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    height: 35px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     margin: 10px;
     display: flex;
+
 }
+
+.home-div {
+    color: rgb(51, 51, 51);
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.menu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 0;
+    width: 440px;
+}
+
+.waterlog-icon{
+    height: 100px;
+}
+
+.map-icon{
+    height: 100px;
+}
+
 .water{
     background-color: #6bb9cc75;
     position: relative;

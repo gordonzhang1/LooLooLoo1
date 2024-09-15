@@ -1,0 +1,45 @@
+.navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.logo-loo {
+    position: relative;
+    height: 50px;
+    margin-right: 65px;
+}
+
+.logo-icon {
+    position: relative;
+    height: 80px;
+    margin-right: 5px;
+}
+
+.return-button{
+    position: relative;
+    background-color: transparent;
+    border-radius: 1rem;
+    color: #6bb8cc;
+    border-color: #6bb8cc;
+    border-style: solid;
+    width: 50px;
+    margin-bottom: 30px;
+}
+.return-button2{
+    position: relative;
+    top: 160px;
+    background-color: transparent;
+    border-radius: 1rem;
+    color: #6bb8cc;
+    border-color: #6bb8cc;
+    border-style: solid;
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+
