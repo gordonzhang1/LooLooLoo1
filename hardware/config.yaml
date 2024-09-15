@@ -1,0 +1,40 @@
+esphome:
+  name: water-fountain
+  friendly_name: water-fountain
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+logger:
+
+http_request:
+  verify_ssl: false
+
+esp32_ble_tracker:
+  scan_parameters:
+    interval: 10s
+
+binary_sensor:
+    - platform: ble_presence
+      ibeacon_uuid: 'AC4626E9-F2B6-40AE-A4DB-C50398390CA5'
+      name: "Virtual iBeacon"
+      timeout: 30s
+      on_press:
+        then:
+          - http_request.get:
+              url: https://gordonzhang1-back-end--4000.prod1.defang.dev/send-sms
+              headers:
+                Content-Type: application/json
+              on_response:
+                then:
+                  - logger.log:
+                      format: 'Response status: %d, Duration: %u ms'
+                      args:
+                        - response->status_code
+                        - response->duration_ms
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
