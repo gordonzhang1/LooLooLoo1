@@ -1,8 +1,8 @@
-# React + Vite
+## Inspiration
+www.loolooloo.co is inspired by the famous Waterloo chant—Water Water Water! Loo Loo Loo! And, of course, the natural consequence of drinking lots of water, water, water, being a visit to the loo, loo, loo!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What it does
+www.loolooloo.co detects when you go to a water fountain, and sends you a text message with a custom link to an interactive map that gives you directions to the nearest bathroom. It also has a daily water tracker that incentivizes you to stay hydrated.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How we built it
+We utilized the MappedIn API to implement an indoor navigation system for building maps. The front-end was developed using React, while the back-end was powered by Node.js. Twilio's API was integrated to enable SMS notifications with custom map links.
