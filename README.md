@@ -76,7 +76,7 @@ LooLooLoo is an indoor mapping web app that directs you to the nearest washroom 
 <h3>  How it works
 </h3>
 <p>
-"We installed ESP32 microcontrollers near water fountains in the engineering building. When a user drinks from a fountain, the ESP32 detects their phone's Bluetooth signal and sends a POST request to our Express.js backend. This triggers an SMS via the Twilio API with a custom link to the LooLooLoo web app, which features an interactive 3D map guiding the user from their current location to the nearest washroom in the building."
+We installed ESP32 microcontrollers near water fountains in the engineering building. When a user drinks from a fountain, the ESP32 detects their phone's Bluetooth signal and sends a POST request to our Express.js backend. This triggers an SMS via the Twilio REST API with a custom link to the LooLooLoo web app, which features an interactive 3D map guiding the user from their current location to the nearest washroom in the building.
 
 </p>
 
@@ -85,10 +85,15 @@ LooLooLoo is an indoor mapping web app that directs you to the nearest washroom 
 
 * [![React][React.js]][React-url]
 * [![Node.js][Node.js]][Node-url]
-* [![OpenAI API][OpenAI-API]][OpenAI-API-url]
-* [![Cloud Vision API][GCP]][GCP-url]
-* [![Firebase][Firebase]][Firebase-url]
-* [![Firestore][Firestore]][Firestore-url]
+* [![TypeScript][TypeScript]][TypeScript-url]
+* [![Docker][Docker]][Docker-url]
+* [![ESP32][ESP32]][ESP32-url]
+* [![Twilio API][Twilio-API]][Twilio-API-url]
+
+
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Features
@@ -193,30 +198,14 @@ Project Link: [https://github.com/gordonzhang1/ShakespeareAI](https://github.com
 [Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
 [Node-url]: https://nodejs.org/
 
-[OpenAI-API]: https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white
-[OpenAI-API-url]: https://openai.com/api/
 
-[GCP]: https://img.shields.io/badge/Cloud%20Vision%20API-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white
-[GCP-url]: https://cloud.google.com/vision/
-
-[Firebase]: https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black
-[Firebase-url]: https://firebase.google.com/
-
-[Firestore]: https://img.shields.io/badge/Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black
-[Firestore-url]: https://firebase.google.com/products/firestore/
-
-[Cpp]: https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white
-[Cpp-url]: https://isocpp.org/
+[TypeScript]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
+[TypeScript-url]: https://www.typescriptlang.org/
+[Docker]: https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com/
+[ESP32]: https://img.shields.io/badge/ESP32-525DDC?style=for-the-badge&logo=esphome&logoColor=white
+[ESP32-url]: https://www.espressif.com/en/products/socs/esp32
+[Twilio-API]: https://img.shields.io/badge/Twilio%20API-F22F46?style=for-the-badge&logo=twilio&logoColor=white
+[Twilio-API-url]: https://www.twilio.com/
 
 
-
-
-
-## Inspiration
-www.loolooloo.co is inspired by the famous Waterloo chant—Water Water Water! Loo Loo Loo! And, of course, the natural consequence of drinking lots of water, water, water, being a visit to the loo, loo, loo!
-
-## What it does
-www.loolooloo.co detects when you go to a water fountain, and sends you a text message with a custom link to an interactive map that gives you directions to the nearest bathroom. It also has a daily water tracker that incentivizes you to stay hydrated.
-
-## How we built it
-We utilized the MappedIn API to implement an indoor navigation system for building maps. The front-end was developed using React, while the back-end was powered by Node.js. Twilio's API was integrated to enable SMS notifications with custom map links.
