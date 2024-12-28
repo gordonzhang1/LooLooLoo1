@@ -119,7 +119,7 @@ Don't forget to give the project a star! Thanks again!
 
 Gordon Zhang - g234zhan@uwaterloo.ca
 
-Project Link: [https://github.com/gordonzhang1/ShakespeareAI](https://github.com/gordonzhang1/ShakespeareAI)
+Project Link: [https://github.com/gordonzhang1/LooLooLoo1](https://github.com/gordonzhang1/LooLooLoo1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
