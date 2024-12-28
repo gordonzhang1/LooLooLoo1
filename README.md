@@ -1,12 +1,6 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
+
 
 
 
@@ -83,6 +77,7 @@ We installed ESP32 microcontrollers beside water fountains in the engineering bu
 * [![TypeScript][TypeScript]][TypeScript-url]
 * [![Docker][Docker]][Docker-url]
 * [![ESP32][ESP32]][ESP32-url]
+* [![YAML][YAML]][YAML-url]
 * [![Twilio API][Twilio-API]][Twilio-API-url]
 
 
@@ -173,5 +168,7 @@ Project Link: [https://github.com/gordonzhang1/LooLooLoo1](https://github.com/go
 [ESP32-url]: https://www.espressif.com/en/products/socs/esp32
 [Twilio-API]: https://img.shields.io/badge/Twilio%20API-F22F46?style=for-the-badge&logo=twilio&logoColor=white
 [Twilio-API-url]: https://www.twilio.com/
+[YAML]: https://img.shields.io/badge/YAML-ff6600?style=for-the-badge&logo=yaml&logoColor=white
+[YAML-url]: https://yaml.org/
 
 
