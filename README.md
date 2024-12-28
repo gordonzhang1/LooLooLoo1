@@ -66,7 +66,7 @@ LooLooLoo is an indoor mapping web app that directs you to the nearest washroom 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<a href="https://github.com/gordonzhang1/LooLooLoo1"><img src="https://i.ibb.co/Wkzbj63/Screenshot-2024-12-27-at-11-29-30-PM.png" alt="Screenshot-2024-12-27-at-11-29-30-PM" border="0" width="1000"></a>
+<a href="https://github.com/gordonzhang1/LooLooLoo1"><img src="https://i.ibb.co/Wkzbj63/Screenshot-2024-12-27-at-11-29-30-PM.png" alt="Screenshot-2024-12-27-at-11-29-30-PM" border="0" width="800"></a>
 
   <p>  LooLooLoo is a indoor mapping web app powered by React and Node.js, and connected to an ESP32 microcontroller.
 </p>
