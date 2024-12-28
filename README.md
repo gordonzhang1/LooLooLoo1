@@ -32,7 +32,7 @@
 Water Water Water, Loo Loo Loo! 
 
 LooLooLoo is an indoor mapping web app that directs you to the nearest washroom when you drink from a water fountain.     <br />
-    <a href="https://www.youtube.com/watch?v=lmbQf5aHT-o" target="_blank"><strong>View Demo »</strong></a>
+    <a href="https://www.youtube.com/watch?v=z4kfvKR1sek" target="_blank"><strong>View Demo »</strong></a>
     <br />
     <br />
     <a href="https://github.com/gordonzhang1/ShakespeareAI/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
@@ -71,7 +71,7 @@ LooLooLoo is an indoor mapping web app that directs you to the nearest washroom 
 <h3>  How it works
 </h3>
 <p>
-We installed ESP32 microcontrollers near water fountains in the engineering building. When a user drinks from a fountain, the ESP32 detects their phone's Bluetooth signal and sends a POST request to our Express.js backend. This triggers an SMS via the Twilio REST API with a custom link to the LooLooLoo web app, which features an interactive 3D map guiding the user from their current location to the nearest washroom in the building.
+We installed ESP32 microcontrollers beside water fountains in the engineering building. Once a user signs up on LooLooLoo by providing us with their phone number and bluetooth idea, they are ready to go! When a user drinks from a fountain, the ESP32 detects their phone's Bluetooth signal and sends a POST request to our Express.js backend. This triggers an SMS via the Twilio REST API with a custom link to the LooLooLoo web app, which features an interactive 3D map guiding the user from their current location to the nearest washroom in the building. LooLooLoo also features a daily water tracker that incentives you to stay hydrated. 
 
 </p>
 
@@ -91,35 +91,6 @@ We installed ESP32 microcontrollers near water fountains in the engineering buil
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Features
-<ul>
-  <li><strong>Digital Note-Pad:</strong> A note-taking experience that allows users to write, draw, erase, and change colour on a canvas. Additionally, users can also add new pages, delete pages, and clear pages, all which is saved to their account</li>
-  <li><strong>Quiz Generation:</strong> After taking notes, users can press "Quiz Me" to generate a set of questions based on their notes.</li>
-  <li><strong>User Authentication:</strong> Secure sign-in and registration using Firebase for user management, along with forgot password and update profile fuctionalities.</li>
-  <li><strong>Data Storage:</strong> Store user data and notes in Firestore for easy access and management.</li>
-</ul>
-And more to come! 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-<p>Want to try ShakespeareAI out? Go to <a href="https://www.shakespeareai.ca/">www.shakespeareai.ca</a> and sign up. Once logged in, write the first fact that comes to mind, and press Quiz Me.</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-<p>Here are some pictures of this web app in action.</p>
-<img src="/src/assets/sa-cover.jpeg" alt="Logo" width="1000" height="auto">
-<img src="/src/assets/quiz.jpeg" alt="Logo" width="1000" height="auto">
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
