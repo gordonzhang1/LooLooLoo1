@@ -34,7 +34,7 @@ LooLooLoo is an indoor mapping web app that directs you to the nearest washroom 
 
 
 
-
+<img src=public/loo.png/>
 
 
 <!-- ABOUT THE PROJECT -->
