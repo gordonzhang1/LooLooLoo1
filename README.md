@@ -60,8 +60,6 @@ LooLooLoo is an indoor mapping web app that directs you to the nearest washroom 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<a href="https://ibb.co/V9VWbsP"><img src="https://www.gordonzhang.ca/assets/loolooloonew-BMPHdA7W.png" alt="Screenshot-2024-12-27-at-11-42-24-PM" border="0" width="1000"></a>
-
 <h3>  How it works
 </h3>
 <p>
