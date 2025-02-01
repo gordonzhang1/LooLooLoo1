@@ -28,10 +28,6 @@ Water Water Water, Loo Loo Loo!
 LooLooLoo is an indoor mapping web app that directs you to the nearest washroom when you drink from a water fountain.     <br />
     <a href="https://www.youtube.com/watch?v=z4kfvKR1sek" target="_blank"><strong>View Demo »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/gordonzhang1/ShakespeareAI/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/gordonzhang1/ShakespeareAI/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
