@@ -42,7 +42,7 @@ LooLooLoo is an indoor mapping web app that directs you to the nearest washroom 
 <h3>  How it works
 </h3>
 <p>
-We installed ESP32 microcontrollers beside water fountains in the engineering building. Once a user signs up on LooLooLoo by providing us with their phone number and bluetooth idea, they are ready to go! When a user drinks from a fountain, the ESP32 detects their phone's Bluetooth signal and sends a POST request to our Express.js backend. This triggers an SMS via the Twilio REST API with a custom link to the LooLooLoo web app, which features an interactive 3D map guiding the user from their current location to the nearest washroom in the building. LooLooLoo also features a daily water tracker that incentives you to stay hydrated. 
+We installed ESP32 microcontrollers beside water fountains in the engineering building. Once a user signs up on LooLooLoo by providing us with their phone number and bluetooth ID, they are ready to go! When a user drinks from a fountain, the ESP32 detects their phone's Bluetooth signal and sends a POST request to our Express.js backend. This triggers an SMS via the Twilio REST API with a custom link to the LooLooLoo web app, which features an interactive 3D map guiding the user from their current location to the nearest washroom in the building. LooLooLoo also features a daily water tracker that incentives you to stay hydrated. 
 
 </p>
 
