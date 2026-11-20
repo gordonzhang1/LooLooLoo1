@@ -25,9 +25,6 @@
   <p align="center">
 Water Water Water, Loo Loo Loo! 
 
-LooLooLoo is an indoor mapping web app that directs you to the nearest washroom when you drink from a water fountain.     <br />
-    <a href="https://www.youtube.com/watch?v=z4kfvKR1sek" target="_blank"><strong>View Demo »</strong></a>
-    <br />
   </p>
 </div>
 
